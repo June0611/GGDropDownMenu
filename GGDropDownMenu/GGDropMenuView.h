@@ -11,8 +11,10 @@
 @interface GGDropMenuView : UIView
 @property(nonatomic,strong)UIImage * dropButtonNormalImage;
 @property(nonatomic,strong)UIImage * dropButtonSelectedImage;
+@property(nonatomic,strong)NSArray<NSString *> * titles;
 
++ (instancetype)dropMenuViewWithFrame:(CGRect)frame andTitles:(NSArray<NSString *> *)titles andNorImage:(UIImage *)norImage andSelImage:(UIImage *)selImage;
 
-+ (instancetype)dropMenuViewWith;
+- (instancetype)initWithFrame:(CGRect)frame andTitles:(NSArray<NSString *> *)titles andNorImage:(UIImage *)norImage andSelImage:(UIImage *)selImage;
 
 @end
